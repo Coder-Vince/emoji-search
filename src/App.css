@@ -1,38 +1,71 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Roboto:wght@300&display=swap');
+
+*, html{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto;
+}
+
+/* POUR MASQUER LA SCROLLBAR */
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.search{
+  width: 500px;
+  height: 200px;
+  /* border: solid black 1px; */
+  margin: auto;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.search input{
+  padding: 15px;
+  border: black 1px solid;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1{
+  margin-top:24px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+input{
+  width: 310px;
+  height: 50px;
+  margin-top: 43px;
+  border-radius: 3px;
+}
+
+.emojiList{
+  width: 716px;
+  height: 400px;
+  margin: auto ;
+  /* border: solid 1px black; */
+  text-align: center;
+  overflow: scroll;
+}
+
+span{
+  height: 40px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding:15px;
+  border: solid 1px black;
+  border-radius: 3px;
+  margin: 10px 0;
 }
 
-.App-link {
-  color: #61dafb;
+p{
+  margin-left: 10px;
+  /* margin-right:5px; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* FOOTER */
+footer{
+  font-size: 15px;
+  font-weight: 700;
+  color: black;
+  text-align: center;
+  padding-top:30px;
 }
